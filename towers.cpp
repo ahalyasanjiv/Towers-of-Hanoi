@@ -17,7 +17,7 @@ void towersOfHanoi(int n, int s, int e) {
 	}
 
 }
-/* Here's a skeleton main function for processing the arguments. */
+
 int main(int argc, char *argv[]) {
 	// define long options
 	static struct option long_opts[] = {
@@ -42,15 +42,11 @@ int main(int argc, char *argv[]) {
 				n = atoi(optarg);
 				break;
 			case '?': // this will catch unknown options.
-				// here is where you would yell at the user.
-				// although, getopt will already print an error message.
 				return 1;
 		}
 	}
 	towersOfHanoi(n,start,end);
 
-	/* TODO: now that you have the options and arguments,
-	 * solve the puzzle. */
 
 	return 0;
 }
